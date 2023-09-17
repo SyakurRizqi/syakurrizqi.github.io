@@ -769,6 +769,8 @@ Portfolio Popup Section
 
 .popup-thumbnail img {
     border-radius: 10px;
+    margin: auto;
+    display: flex;
 }
 
 .popup-header h3 {
