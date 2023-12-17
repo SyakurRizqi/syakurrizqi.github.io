@@ -157,6 +157,7 @@ section.fade-out {
 .section-title h2 {
     font-size: 40px;
     text-transform: capitalize;
+    user-select: none;
 }
 
 /* Custom Scrollbar */
@@ -474,11 +475,13 @@ Home Section
 
 .home-text p {
     font-size: 18px;
+    user-select: none;
 }
 
 .home-text h1 {
     font-size: 50px;
     text-transform: capitalize;
+    user-select: none;
 }
 
 .home-text h2 {
@@ -486,6 +489,7 @@ Home Section
     text-transform: capitalize;
     font-weight: 400;
     margin: 0 0 30px;
+    user-select: none;
 }
 
 .home-text .btn {
@@ -539,6 +543,8 @@ About Section
 .about-text .skills {
     display: flex;
     flex-wrap: wrap;
+    cursor: default;
+    user-select: none;
 }
 
 .about-text .skill-item {
@@ -633,9 +639,19 @@ text-align: justify;
     top: 16px;
     border-radius: 50%;
 }
-.timeline-item ol {
-    list-style: initial;
+
+.timeline-item li {
+    margin-bottom: 10px;
 }
+
+.timeline-item ul li::before {
+    content: "\2022";
+    color: var(--main-color);
+    font-weight: 700;
+    width: 1em;
+    display: inline-block;
+}
+
 .about-text .tab-content {
     padding: 40px 0;
     display: none;
